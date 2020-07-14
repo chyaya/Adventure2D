@@ -1,22 +1,24 @@
+
+
+//sPawn_AI_Step();
 sPawn_Appearance(self, m_DirX, m_DirY);
 
-if(m_CurHealth == 0 && m_LastHealth > 0 && object_index != oGhost)
-{
-	event_user(0);
-}
-
-m_LastHealth = m_CurHealth;
+event_inherited();
 
 if(m_DirX != 0 || m_DirY != 0)
 {
 	direction = sUtil_DirToAngle(m_DirX, m_DirY);
+	
+	if(m_AI_Control)
+	{
+		m_TargetAngle = direction;	
+	}
 }
 
 
 if(m_PlayFootStepSound
 	&& (m_DirX != 0 || m_DirY != 0)
-	&& (m_LastImageIndex > 1 && image_index <= 1
-	 || m_LastImageIndex < sprite_get_number(sprite_index)/2 && image_index >= sprite_get_number(sprite_index)/2))
+	&& m_LastImageIndex > 1 && image_index <= 1)
 {
 	var snd = 0;
 	switch(irandom(3))

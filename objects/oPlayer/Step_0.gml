@@ -4,59 +4,59 @@
 // Inherit the parent event
 event_inherited();
 
-m_Input_AxisL_Up = false;
-m_Input_AxisL_Down = false;
-m_Input_AxisL_Left = false;
-m_Input_AxisL_Right = false;
-m_Input_DPad_Up = false;
-m_Input_DPad_Down = false;
-m_Input_DPad_Left = false;
-m_Input_DPad_Right = false;
-m_Input_Btn_A = false;
-m_Input_Btn_B = false;
-m_Input_Btn_X = false;
-m_Input_Btn_Y = false;
-m_Input_Btn_Select = false;
-m_Input_Btn_Start = false;
-m_Input_Btn_LB = false;
-m_Input_Btn_RB = false;
-m_Input_Btn_LT = false;
-m_Input_Btn_RT = false;
+var len = 16;
+m_TargetOffsetX = lengthdir_x(len, m_TargetAngle);
+m_TargetOffsetY = lengthdir_y(len, m_TargetAngle) - sprite_height/2;
 
-sPlayer_CaptureKeyboard();
-sPlayer_CaptureGamepad();
+if(m_Inven_Equip != noone)
+{
+	for(var i = 0; i < Equip.MAX; ++i)
+	{
+		var lastItemId = m_LastEquipItemIds[i];
+		var curItemId = sInven_GetItemId(m_Inven_Equip, i);
+	
+		if(lastItemId != curItemId)
+		{
+			if(global.Item_OnEquip[lastItemId] != noone)
+			{
+				script_execute(global.Item_OnEquip[lastItemId], self, m_Inven_Equip, i, -1);
+			}
+		
+			if(global.Item_OnEquip[curItemId] != noone)
+			{
+				script_execute(global.Item_OnEquip[curItemId], self, m_Inven_Equip, i, +1);
+			}
+		
+			m_LastEquipItemIds[i] = curItemId;
+		}
+	}
+}
 
-m_DirY = 0;
-m_DirX = 0;
+if(m_Inven_Bag != noone)
+{
+	if(m_QuickSlotMap != noone)
+		ds_map_destroy(m_QuickSlotMap);
 	
-if(m_Input_AxisL_Up)
-{
-	m_DirY -= 1;
-}
-else if(m_Input_AxisL_Down)
-{
-	m_DirY += 1;
-}
+	m_QuickSlotMap = sInven_GetMapOfQuickSlotItem(m_Inven_Bag);
+
+	if(ds_map_find_value(m_QuickSlotMap, m_SelectedQuickSlotItemId) == undefined)
+		m_SelectedQuickSlotItemId = 0;
 	
-if(m_Input_AxisL_Left)
-{
-	m_DirX -= 1;
-}
-else if(m_Input_AxisL_Right)
-{
-	m_DirX += 1;
-}
+	if(m_SelectedQuickSlotItemId == 0 && ds_map_size(m_QuickSlotMap) > 0)
+		m_SelectedQuickSlotItemId = ds_map_find_first(m_QuickSlotMap);
+
+	if(m_SelectedQuickSlotItemId != m_LastQuickSlotItemId)
+	{
+		if(global.Item_OnQuickSlot[m_LastQuickSlotItemId] != noone)
+		{
+			script_execute(global.Item_OnQuickSlot[m_LastQuickSlotItemId], self, m_LastQuickSlotItemId, -1);
+		}
 		
-if(m_Input_DPad_Left || m_Input_Btn_LB)
-{
-	selected--;
-}
-		
-if(m_Input_DPad_Right || m_Input_Btn_RB)
-{
-	selected++;
-}
-		
-selected = clamp(selected, 1, total_slots);
+		if(global.Item_OnQuickSlot[m_SelectedQuickSlotItemId] != noone)
+		{
+			script_execute(global.Item_OnQuickSlot[m_SelectedQuickSlotItemId], self, m_SelectedQuickSlotItemId, +1);
+		}
 	
-sPawn_Move(1.0);
+		m_LastQuickSlotItemId = m_SelectedQuickSlotItemId;
+	}
+}

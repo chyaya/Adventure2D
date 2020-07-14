@@ -1,5 +1,6 @@
 /// @description Dead
 
-sUtil_PlayRandomSound(m_Sound_Dead);
+// Inherit the parent event
+event_inherited();
 
 sPawn_Dead();

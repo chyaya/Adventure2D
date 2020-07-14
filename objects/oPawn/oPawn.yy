@@ -45,16 +45,6 @@
             "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
         },
         {
-            "id": "48101fef-0e7f-4668-af15-4b8f49004eff",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
-        },
-        {
             "id": "29a3f5c9-c054-4e53-ae22-18308c4870c5",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -73,11 +63,31 @@
             "enumb": 1,
             "eventtype": 2,
             "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
+        },
+        {
+            "id": "cdb7e52c-3937-4ba0-8e87-6aba22a9125c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 73,
+            "eventtype": 8,
+            "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
+        },
+        {
+            "id": "18846b87-652f-4ade-8c6a-59da4dc418af",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
+    "parentObjectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -161,62 +171,6 @@
             "value": "noone",
             "varName": "m_SpriteIndex_Action",
             "varType": 5
-        },
-        {
-            "id": "1c704cd6-d5c9-402c-8ffa-3a401724d9be",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "100",
-            "varName": "m_MaxHealth",
-            "varType": 1
-        },
-        {
-            "id": "765cc31c-94e0-4b63-80e0-e969bc9416d9",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "20",
-            "varName": "m_Damage",
-            "varType": 1
-        },
-        {
-            "id": "3dac35b8-3604-4afb-8398-24dac5594765",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "m_Rotten",
-            "varType": 3
-        },
-        {
-            "id": "e62b4919-8a0a-406c-a733-53df9f064338",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "m_NoSoul",
-            "varType": 3
         },
         {
             "id": "76639d57-0a25-4edb-ba44-f6b582257226",

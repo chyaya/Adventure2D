@@ -1,0 +1,1 @@
+OT_Create(room_height);
