@@ -18,7 +18,9 @@ if(m_DirX != 0 || m_DirY != 0)
 
 if(m_PlayFootStepSound
 	&& (m_DirX != 0 || m_DirY != 0)
-	&& m_LastImageIndex > 1 && image_index <= 1)
+	&& (m_LastImageIndex > 1 && image_index <= 1
+	 || m_LastImageIndex < sprite_get_number(sprite_index)/2 && image_index >= sprite_get_number(sprite_index)/2)
+	)
 {
 	var snd = 0;
 	switch(irandom(3))
