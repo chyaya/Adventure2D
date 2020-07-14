@@ -31,15 +31,7 @@
             "mvc": "1.0",
             "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "propertyId": "85328fb6-fb12-49bb-97e6-af589f00bd3b",
-            "value": "sprManMove"
-        },
-        {
-            "id": "3946f40e-a5cf-4e90-a2b9-ccfc2b36ad58",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
-            "propertyId": "274a8945-8128-44fc-a1b9-b37d377b7c2b",
-            "value": "100"
+            "value": "sprRogueMove"
         },
         {
             "id": "8a6e7a10-dd4e-45c6-8638-3f4ee6fd0136",
@@ -47,7 +39,7 @@
             "mvc": "1.0",
             "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "propertyId": "1dc99b76-9d40-4983-ae9e-9d18262b0ce0",
-            "value": "sprManIdle"
+            "value": "sprRogueIdle"
         },
         {
             "id": "6eba0a55-eaf7-4acf-ba54-c901b2997c26",
@@ -90,6 +82,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "6db60e4a-e388-4fc0-a467-a3bf2e2b4616",
+    "spriteId": "27f06feb-e586-4496-bf5c-4a32c0ce4585",
     "visible": true
 }

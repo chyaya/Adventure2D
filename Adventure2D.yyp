@@ -63,10 +63,34 @@
             }
         },
         {
+            "Key": "23c0a74e-c9a9-45ee-ad96-5924e2b22ccb",
+            "Value": {
+                "id": "80bef295-bf53-42ce-886d-2472ef3fbb0e",
+                "resourcePath": "sprites\\sprite10\\sprite10.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "27f06feb-e586-4496-bf5c-4a32c0ce4585",
+            "Value": {
+                "id": "7a9417b7-a1a1-4072-ae94-5e7e54285cf5",
+                "resourcePath": "sprites\\sprRogueIdle\\sprRogueIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2a50b189-ffad-4c4e-89ea-93c26844b9c0",
             "Value": {
                 "id": "e719da2a-e21a-45fa-8ab1-bd31ddd574db",
                 "resourcePath": "sprites\\spr_slot\\spr_slot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "33cae293-7a3d-4916-a732-7077694a10a9",
+            "Value": {
+                "id": "c562fca2-ef40-4974-9b2b-58d638d41ddd",
+                "resourcePath": "sprites\\sprRogueMove\\sprRogueMove.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -102,7 +102,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "80",
+            "value": "40",
             "varName": "m_MoveSpeed",
             "varType": 0
         },

@@ -22,7 +22,7 @@ if(false == variable_instance_exists(id, "m_AttackType"))
 var stats = sUtil_MakeStats(m_Level);
 m_MaxHealth = stats[?"health"];
 m_Damage = stats[?"damage"];
-m_MoveSpeed = stats[?"moveSpeed"];
+//m_MoveSpeed = stats[?"moveSpeed"];
 ds_map_destroy(stats);
 
 if(false == variable_instance_exists(id, "m_CurHealth"))
