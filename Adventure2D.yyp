@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "704c5c1a-268a-4837-84dd-566789a19ae5",
+            "Value": {
+                "id": "7b3b3c88-811e-4632-947f-7ff9a30b822e",
+                "resourcePath": "scripts\\sPlayerController_ClearInteractObject\\sPlayerController_ClearInteractObject.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "74371532-3ee0-4078-b153-25f8ee3afca9",
             "Value": {
                 "id": "811393ec-9e33-4a94-a118-9235c4553500",
@@ -612,6 +620,14 @@
                 "id": "cc8d93cc-2a70-4993-b527-ca0f0b7e8786",
                 "resourcePath": "views\\7aafb2d2-dae6-447d-9e03-cf2a540a5c6f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7cce86a3-e092-47fa-88f6-3cf92d6df0a1",
+            "Value": {
+                "id": "db513012-e8db-4ecb-bb44-60908e13295e",
+                "resourcePath": "scripts\\sPlayerController_CaptureInteractObject\\sPlayerController_CaptureInteractObject.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1311,6 +1327,8 @@
         "18092258-e9e2-480b-a61a-24ac0424da87",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "b7f82b65-af86-490f-b8e0-c5d03c79c7d6",
+        "7cce86a3-e092-47fa-88f6-3cf92d6df0a1",
+        "704c5c1a-268a-4837-84dd-566789a19ae5",
         "56a7f87d-216f-4c72-b8c2-4f29af023b7f",
         "3f208f6f-7c8f-4b69-8c65-5aff9f921b55",
         "30332e9a-3414-4667-82d9-3fb0109e48ad",

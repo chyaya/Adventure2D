@@ -55,14 +55,14 @@ case Mode.Move:
 	
 	//m_Actions[ACTION_B] = Action.OpenBag;	
 		
-	if(m_InteractionObject != noone
-		&& (object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft)
-		|| object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage)
-		|| m_InteractionObject.object_index == oRocketStep
-		))
-	{
-		//m_Actions[ACTION_A] = Action.UseBuilding;
-	}
+	//if(m_InteractionObject != noone
+	//	&& (object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft)
+	//	|| object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage)
+	//	|| m_InteractionObject.object_index == oRocketStep
+	//	))
+	//{
+	//	//m_Actions[ACTION_A] = Action.UseBuilding;
+	//}
 		
 			
 	if(noone != m_PlayerObject)
@@ -211,7 +211,7 @@ if(noone != m_PlayerObject)
 	m_PlayerObjectY = m_PlayerObject.y;	
 }
 
-//sPlayerController_CaptureInteractObject();
+sPlayerController_CaptureInteractObject();
 
 
 //if(global.UseFOW)
