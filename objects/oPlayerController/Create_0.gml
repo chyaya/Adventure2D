@@ -22,6 +22,7 @@ enum Mode {
 }
 
 m_Mode = Mode.Move;
+m_InteractActionIndex = 0;
 
 
 m_CraftVisible = [];

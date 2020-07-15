@@ -17,9 +17,16 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
-        
+        {
+            "id": "cc424968-08d5-4352-be4b-7a51828ac152",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
+            "propertyId": "b443090f-23b9-45b5-85f1-c9c6ccd3b28c",
+            "value": "모닥불"
+        }
     ],
-    "parentObjectId": "d4faa0bb-fa27-483f-b860-e16a2e9dd63f",
+    "parentObjectId": "10ec3e89-82f8-4c68-ae9a-b88516f36528",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

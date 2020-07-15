@@ -115,9 +115,13 @@ case Mode.Move:
 		}	
 	}
 	
-	if(m_Input_Btn_A && m_InteractionObject)
+	if(m_Input_Btn_A && m_InteractionObject != noone)
 	{
 		m_Mode = Mode.Interact;
+		m_InteractActionIndex = 0;
+		
+		m_PlayerObject.m_DirX = 0;
+		m_PlayerObject.m_DirY = 0;
 	}
 	
 	
@@ -154,6 +158,30 @@ case Mode.Bag:
 	}
 	break;
 case Mode.Interact:
+	
+	if(m_Input_Btn_B)
+	{
+		m_Mode = Mode.Move;
+	}
+	
+	if(m_InteractionObject != noone)
+	{
+		if(other.m_Input_AxisL_Up)
+		{
+			m_InteractActionIndex++;
+		
+			if(m_InteractActionIndex >= array_length_1d(m_InteractionObject.m_Actions))
+				m_InteractActionIndex = array_length_1d(m_InteractionObject.m_Actions) - 1;
+		}
+		else if(other.m_Input_AxisL_Down)
+		{
+			m_InteractActionIndex--;
+			
+			if(m_InteractActionIndex < 0)
+				m_InteractActionIndex = 0;
+		}
+	}
+	
 	
 	break;
 }

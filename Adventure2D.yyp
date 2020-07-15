@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "8e00b484-babf-4a51-8bf9-13d10fd3c028",
+            "Value": {
+                "id": "21a39869-bc49-495f-8d14-88114194607b",
+                "resourcePath": "scripts\\sUtil_DrawTextBox\\sUtil_DrawTextBox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8e3de1d5-45dd-4390-88a5-730bdf4dcf31",
             "Value": {
                 "id": "71f238fc-e25a-481b-ad5a-c04a5f0b0b39",
@@ -1393,7 +1401,8 @@
         "23808050-c86b-404c-b0de-b6037f299474",
         "c0d5957a-2f39-4de0-95e1-1b97814dfcbd",
         "16486f8f-4894-4148-abbd-555816a39860",
-        "f4fbfa8e-71eb-4a80-953c-7ed21b80febf"
+        "f4fbfa8e-71eb-4a80-953c-7ed21b80febf",
+        "8e00b484-babf-4a51-8bf9-13d10fd3c028"
     ],
     "tutorial": ""
 }

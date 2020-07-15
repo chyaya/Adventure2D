@@ -1,10 +1,8 @@
 draw_set_color(c_white);
 
 
-if(m_InteractionObject != noone)
-{
-	sPlayerController_GUI_Interact();
-}
+sPlayerController_GUI_Interact();
+
 
 	
 

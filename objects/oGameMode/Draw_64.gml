@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 draw_sprite(sprCompassBG, 1, 100, 100);
 draw_sprite_ext(sprCompassDir, 1, 100, 100, 0.5, 0.5, 0, c_white, 1);
