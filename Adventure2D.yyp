@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "16486f8f-4894-4148-abbd-555816a39860",
+            "Value": {
+                "id": "dcefd6e7-61c5-41be-81d7-7ce72b726a40",
+                "resourcePath": "scripts\\sUtil_WorldToScreenY\\sUtil_WorldToScreenY.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "18092258-e9e2-480b-a61a-24ac0424da87",
             "Value": {
                 "id": "6a2abfe0-d184-471b-8f3e-b83d5a2f03be",
@@ -527,14 +535,6 @@
             }
         },
         {
-            "Key": "6d608ebf-16f4-4633-9078-db130b343ff3",
-            "Value": {
-                "id": "342c74a7-18d0-43c0-94bf-efd89d95071c",
-                "resourcePath": "fonts\\fnt_arial\\fnt_arial.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "6e4bd5aa-8939-4330-8445-5c2217ebf9e7",
             "Value": {
                 "id": "fa522719-289d-4617-a455-5cb6a67916aa",
@@ -604,6 +604,14 @@
                 "id": "d1ff280e-d0cd-4687-b731-5a6bc95af90f",
                 "resourcePath": "scripts\\__GMA_BREAKPOINT__\\__GMA_BREAKPOINT__.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "78c15f08-e881-46ee-8041-f2991a82092c",
+            "Value": {
+                "id": "b2ddf5fc-324e-4150-a78b-03c34a32f3e7",
+                "resourcePath": "fonts\\fntNanum\\fntNanum.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -755,6 +763,14 @@
             "Value": {
                 "id": "71f238fc-e25a-481b-ad5a-c04a5f0b0b39",
                 "resourcePath": "scripts\\@__init_background\\__init_background.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8ed0f33c-587e-42e3-9868-f0190890ff49",
+            "Value": {
+                "id": "eba5cc07-f694-4e62-b598-cb38216ab00d",
+                "resourcePath": "scripts\\sPlayerController_GUI_Interact\\sPlayerController_GUI_Interact.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -988,6 +1004,14 @@
                 "id": "09e0a070-2ecc-472f-8f14-c80b95739c00",
                 "resourcePath": "sprites\\sprTile\\sprTile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c0d5957a-2f39-4de0-95e1-1b97814dfcbd",
+            "Value": {
+                "id": "448fb241-4731-4055-928e-af50df0057d8",
+                "resourcePath": "scripts\\sUtil_WorldToScreenX\\sUtil_WorldToScreenX.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1255,6 +1279,14 @@
             }
         },
         {
+            "Key": "f4fbfa8e-71eb-4a80-953c-7ed21b80febf",
+            "Value": {
+                "id": "8c5a8214-1ece-406f-ac9a-7bd4162a2509",
+                "resourcePath": "scripts\\sUtil_ScreenToWorld\\sUtil_ScreenToWorld.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f8d56df8-0736-48dc-93a3-510613b6fe77",
             "Value": {
                 "id": "76e2368a-4a8c-4791-875b-aebf3a1789f5",
@@ -1329,6 +1361,7 @@
         "b7f82b65-af86-490f-b8e0-c5d03c79c7d6",
         "7cce86a3-e092-47fa-88f6-3cf92d6df0a1",
         "704c5c1a-268a-4837-84dd-566789a19ae5",
+        "8ed0f33c-587e-42e3-9868-f0190890ff49",
         "56a7f87d-216f-4c72-b8c2-4f29af023b7f",
         "3f208f6f-7c8f-4b69-8c65-5aff9f921b55",
         "30332e9a-3414-4667-82d9-3fb0109e48ad",
@@ -1357,7 +1390,10 @@
         "56436457-4aa3-455c-aadd-c8281d38bff2",
         "c5946e86-264c-405d-9fc1-42f33dd24026",
         "1ed232e4-33db-4085-8720-a672e28a0cbc",
-        "23808050-c86b-404c-b0de-b6037f299474"
+        "23808050-c86b-404c-b0de-b6037f299474",
+        "c0d5957a-2f39-4de0-95e1-1b97814dfcbd",
+        "16486f8f-4894-4148-abbd-555816a39860",
+        "f4fbfa8e-71eb-4a80-953c-7ed21b80febf"
     ],
     "tutorial": ""
 }

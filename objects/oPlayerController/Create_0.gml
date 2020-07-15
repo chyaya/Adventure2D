@@ -16,7 +16,7 @@ m_Input_AxisL_Active_Next_Step_Time = 0;
 enum Mode {
 	Move,
 	Bag,
-	UseBuilding,
+	Interact,
 	
 	MAX
 }

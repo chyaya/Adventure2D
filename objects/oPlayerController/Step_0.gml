@@ -53,22 +53,8 @@ switch(m_Mode)
 {
 case Mode.Move:
 	
-	//m_Actions[ACTION_B] = Action.OpenBag;	
-		
-	//if(m_InteractionObject != noone
-	//	&& (object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft)
-	//	|| object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage)
-	//	|| m_InteractionObject.object_index == oRocketStep
-	//	))
-	//{
-	//	//m_Actions[ACTION_A] = Action.UseBuilding;
-	//}
-		
-			
 	if(noone != m_PlayerObject)
-	{
-		//m_Actions[ACTION_X] = Action.Attack;
-		
+	{	
 		with(m_PlayerObject)
 		{
 			m_DirY = 0;
@@ -128,9 +114,15 @@ case Mode.Move:
 			}
 		}	
 	}
+	
+	if(m_Input_Btn_A && m_InteractionObject)
+	{
+		m_Mode = Mode.Interact;
+	}
+	
+	
 	break;
 case Mode.Bag:
-	//m_Actions[ACTION_B] = Action.CloseBag;
 	
 	with(m_PlayerObject)
 	{
@@ -161,46 +153,7 @@ case Mode.Bag:
 		break;
 	}
 	break;
-case Mode.UseBuilding:
-/*
-	m_Actions[ACTION_B] = Action.UnuseBuilding;
-		
-	with(m_InteractionObject)
-	{
-		if(object_index == oRocketStep)
-		{
-			sGameLogic_GameOver(true);
-		}
-		else if(object_is_ancestor(object_index, oBuildingCraft))
-		{
-			other.m_Actions[ACTION_A] = Action.SelectCraft_One;
-			other.m_Actions[ACTION_X] = Action.SelectCraft_HalfOfAll;
-			other.m_Actions[ACTION_Y] = Action.SelectCraft_All;
-			
-			if(other.m_Input_AxisL_Step)
-			{
-				if(other.m_Input_AxisL_Up || other.m_Input_DPad_Up)
-				{
-					//var prevId = sBuilding_GetPrevVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
-		
-					if(prevId > 0)
-						m_SelectedCraftId = prevId;
-				}
-				else if(other.m_Input_AxisL_Down || other.m_Input_DPad_Down)
-				{
-					//var nextId = sBuilding_GetNextVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
-		
-					if(nextId > 0)
-						m_SelectedCraftId = nextId;
-				}
-			}
-		}
-		else with(oPlayerController)
-		{
-			//sPlayerController_GUI_Inventory();
-		}
-	}
-	*/
+case Mode.Interact:
 	
 	break;
 }
@@ -222,21 +175,6 @@ if(other.m_Input_Btn_Start)
 {
 	//game_restart();
 }
-		
-if(other.m_Input_Btn_Select)
-{
-	m_GamepadZoom = !m_GamepadZoom;
-		
-	if(other.m_GamepadZoom)
-	{
-		oCamera.zoom = 1.0;
-	}
-	else
-	{
-		oCamera.zoom = 4.0;
-	}
-}
-	
 
 //////////////////////////////////////////////////////////
 // Ability / Possess

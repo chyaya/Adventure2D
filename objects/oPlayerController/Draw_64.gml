@@ -1,5 +1,13 @@
 draw_set_color(c_white);
 
+
+if(m_InteractionObject != noone)
+{
+	sPlayerController_GUI_Interact();
+}
+
+	
+
 /*
 sPlayerController_DrawGUI_GhostScreenEffect();
 sPlayerController_DrawGUI_InteractObject();
