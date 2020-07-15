@@ -51,49 +51,23 @@ m_Input_AxisL_Active_Last = m_Input_AxisL_Active;
 
 switch(m_Mode)
 {
-case Mode.DeployBuilding:
 case Mode.Move:
 	
-	if(m_Mode == Mode.Move)
+	//m_Actions[ACTION_B] = Action.OpenBag;	
+		
+	if(m_InteractionObject != noone
+		&& (object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft)
+		|| object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage)
+		|| m_InteractionObject.object_index == oRocketStep
+		))
 	{
-		m_Actions[ACTION_B] = Action.OpenBag;	
-		
-		if(m_InteractionObject != noone
-			&& (object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft)
-			|| object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage)
-			|| m_InteractionObject.object_index == oRocketStep
-			))
-		{
-			m_Actions[ACTION_A] = Action.UseBuilding;
-		}
-		
-		
-		if(m_PlayerObject != noone)
-		{
-			if(m_PlayerObject.m_Mount == noone)
-			{
-				//if(m_InteractionObject != noone
-				//	&& object_is_ancestor(m_InteractionObject.object_index, oMount))
-				//{
-				//	m_Actions[ACTION_Y] = Action.Mount;
-				//}
-			}
-			else
-			{
-				m_Actions[ACTION_Y] = Action.Unmount;
-			}
-		}
+		//m_Actions[ACTION_A] = Action.UseBuilding;
 	}
-	else
-	{
-		m_Actions[ACTION_A] = Action.Deploy;
-		m_Actions[ACTION_B] = Action.CancelDeploy;
-	}
-	
-	
+		
+			
 	if(noone != m_PlayerObject)
 	{
-		m_Actions[ACTION_X] = Action.Attack;
+		//m_Actions[ACTION_X] = Action.Attack;
 		
 		with(m_PlayerObject)
 		{
@@ -116,14 +90,6 @@ case Mode.Move:
 			else if(other.m_Input_AxisL_Right)
 			{
 				m_DirX += 1;
-			}
-	
-			sPawn_Move(1.0);
-			
-			if(m_Mount != noone)
-			{
-				x = m_Mount.x;
-				y = m_Mount.y - m_Mount.sprite_height/2;
 			}
 			
 			if(other.m_Input_AxisR_Active)
@@ -164,7 +130,7 @@ case Mode.Move:
 	}
 	break;
 case Mode.Bag:
-	m_Actions[ACTION_B] = Action.CloseBag;
+	//m_Actions[ACTION_B] = Action.CloseBag;
 	
 	with(m_PlayerObject)
 	{
@@ -196,6 +162,7 @@ case Mode.Bag:
 	}
 	break;
 case Mode.UseBuilding:
+/*
 	m_Actions[ACTION_B] = Action.UnuseBuilding;
 		
 	with(m_InteractionObject)
@@ -233,7 +200,7 @@ case Mode.UseBuilding:
 			//sPlayerController_GUI_Inventory();
 		}
 	}
-	
+	*/
 	
 	break;
 }

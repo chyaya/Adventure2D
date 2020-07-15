@@ -11,49 +11,34 @@ sMacro_TileIndex();
 
 var seconds_passed = delta_time/1000000;
 var move_speed_this_frame = m_MoveSpeed*moveSpeedRate*seconds_passed;
-	
-x += m_DirX*move_speed_this_frame;
 
-/*
+	
+	
+if(place_free(x + m_DirX*move_speed_this_frame, y))
+	x += m_DirX*move_speed_this_frame;
+
 if( m_DirX != 0 )
 {
-	var tx	= (x + m_DirX*OBJ_HALF_W - TILE_OFFSET)>>TILE_SHIFT;		// check right edge
-	var ty1 = ((y + OBJ_HALF_H - TILE_OFFSET - 1)>>TILE_SHIFT);
-	var ty2 = ((y - OBJ_HALF_H - TILE_OFFSET)>>TILE_SHIFT);
+	// m_DirX -1일 때 xoffset이 뒤집어짐
+	var correct_xoffset = m_DirX*sprite_xoffset;
+	var correct_bbox_left = sprite_get_bbox_left(sprite_index);
+	var correct_bbox_right = sprite_get_bbox_right(sprite_index);
+	
+	if(x < correct_xoffset - correct_bbox_left)
+		x = correct_xoffset - correct_bbox_left;
 		
-	if(aStar_get_blocked(tx, ty1) || aStar_get_blocked(tx, ty2))
-	{
-		if(m_DirX > 0)
-		{
-			x = (tx<<TILE_SHIFT) - TILE_SIZE + (TILE_SIZE - m_DirX*OBJ_HALF_W) + TILE_OFFSET;
-		}
-		else
-		{
-			x = (x&~(TILE_SIZE-1)) - m_DirX*OBJ_HALF_W + TILE_OFFSET;
-		}
-	}
+	if(x > room_width + correct_xoffset - correct_bbox_right)
+		x = room_width + correct_xoffset - correct_bbox_right;
 }
-*/
 
-y += m_DirY*move_speed_this_frame;
+if(place_free(x, y + m_DirY*move_speed_this_frame))
+	y += m_DirY*move_speed_this_frame;
 
-/*
 if( m_DirY != 0 )
 {
-	var tx1 = (x + OBJ_HALF_W - TILE_OFFSET - 1)>>TILE_SHIFT;		// check right edge
-	var tx2 = (x - OBJ_HALF_W - TILE_OFFSET)>>TILE_SHIFT;		// check right edge
-	var ty	= ((y + m_DirY*OBJ_HALF_H - TILE_OFFSET)>>TILE_SHIFT);
-	
-	if(aStar_get_blocked(tx1, ty) || aStar_get_blocked(tx2, ty))
-	{
-		if(m_DirY > 0)
-		{
-			y = (ty<<TILE_SHIFT) - TILE_SIZE + (TILE_SIZE - m_DirY*OBJ_HALF_H) + TILE_OFFSET;
-		}
-		else
-		{
-			y = (y&~(TILE_SIZE-1)) - m_DirY*OBJ_HALF_H + TILE_OFFSET;
-		}
-	}
+	if(y < sprite_yoffset - sprite_get_bbox_top(sprite_index))
+		y = sprite_yoffset - sprite_get_bbox_top(sprite_index);
+		
+	if(y > room_height + sprite_yoffset - sprite_get_bbox_bottom(sprite_index))
+		y = room_height + sprite_yoffset - sprite_get_bbox_bottom(sprite_index);
 }
-*/

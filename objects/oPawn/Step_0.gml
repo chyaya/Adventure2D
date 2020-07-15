@@ -51,3 +51,5 @@ if(rottenAlarmTime > 0)
 		m_RottenNotifySec = leftSec;
 	}
 }
+
+sPawn_Move(1.0);

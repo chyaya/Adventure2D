@@ -17,11 +17,7 @@ with(obj)
 
 		var moved = dirX != 0 || dirY != 0;
 
-		if(m_Mount != noone)
-		{
-			sprite_index = m_SpriteIndex_Idle;
-		}
-		else if(m_Attacking)
+		if(m_Attacking)
 		{
 			sprite_index = m_SpriteIndex_Action;
 		}
