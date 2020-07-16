@@ -88,29 +88,19 @@ case Mode.Move:
 			}
 			
 			if(other.m_Input_Btn_LB)
-			{
-				var prev;
+			{			
+				--other.m_CurrentInvenSlot;
 				
-				if(m_SelectedQuickSlotItemId == 0)
-					prev = ds_map_find_first(m_QuickSlotMap);
-				else
-					prev = ds_map_find_previous(m_QuickSlotMap, m_SelectedQuickSlotItemId);
-				
-				if(prev != undefined)
-					m_SelectedQuickSlotItemId = prev;
+				if(other.m_CurrentInvenSlot < 1)
+					other.m_CurrentInvenSlot = 1;
 			}
 			
 			if(other.m_Input_Btn_RB)
 			{
-				var next;
+				++other.m_CurrentInvenSlot;
 				
-				if(m_SelectedQuickSlotItemId == 0)
-					next = ds_map_find_first(m_QuickSlotMap);
-				else
-					next = ds_map_find_next(m_QuickSlotMap, m_SelectedQuickSlotItemId);
-				
-				if(next != undefined)
-					m_SelectedQuickSlotItemId = next;
+				if(other.m_CurrentInvenSlot > sInven_GetTotalSlotNum(m_Inven_Bag))
+					other.m_CurrentInvenSlot = sInven_GetTotalSlotNum(m_Inven_Bag);
 			}
 		}	
 	}

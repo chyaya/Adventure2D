@@ -13,10 +13,5 @@ if(m_Inven_Equip != noone)
 	m_Inven_Equip = noone;
 }
 
-if(m_QuickSlotMap != noone)
-{
-	ds_map_destroy(m_QuickSlotMap);
-	m_QuickSlotMap = noone;
-}
 
 oPlayerController.m_PlayerObject = noone;
