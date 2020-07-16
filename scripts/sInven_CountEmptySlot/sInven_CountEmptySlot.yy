@@ -1,8 +1,8 @@
 {
-    "id": "8ed0f33c-587e-42e3-9868-f0190890ff49",
+    "id": "ea0203c8-5975-4ef9-9195-13e149c5f64a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sPlayerController_GUI_Interact",
+    "name": "sInven_CountEmptySlot",
     "IsCompatibility": false,
     "IsDnD": false
 }

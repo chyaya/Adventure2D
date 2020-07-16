@@ -166,14 +166,14 @@ case Mode.Interact:
 	
 	if(m_InteractionObject != noone)
 	{
-		if(other.m_Input_AxisL_Up)
+		if(other.m_Input_AxisL_Up && other.m_Input_AxisL_Step)
 		{
 			m_InteractActionIndex++;
 		
 			if(m_InteractActionIndex >= array_length_1d(m_InteractionObject.m_Actions))
 				m_InteractActionIndex = array_length_1d(m_InteractionObject.m_Actions) - 1;
 		}
-		else if(other.m_Input_AxisL_Down)
+		else if(other.m_Input_AxisL_Down && other.m_Input_AxisL_Step)
 		{
 			m_InteractActionIndex--;
 			

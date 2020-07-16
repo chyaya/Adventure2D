@@ -4,6 +4,8 @@ enum Item
 {
 	NONE,
 	
+	Axe,
+	
 	Fruit,
 	Apple,
 	Meat,
@@ -16,6 +18,8 @@ enum Item
 }
 
 inv_create_item(Item.NONE, spr_no_item, "", 0, "", noone, noone, noone, 0); //Don't remove this one!
+
+inv_create_item(Item.Axe, sprAxe, "도끼", 100, "공격력 + 3", noone, noone, noone, 3);
 
 inv_create_item(Item.Fruit, sprFruit, "열매", 100, "포만감 + 3", sItem_Eat_Satiety_OnUse, noone, noone, 3);
 inv_create_item(Item.Apple, sprApple, "사과", 10, "포만감 + 4", sItem_Eat_Satiety_OnUse, noone, noone, 4);

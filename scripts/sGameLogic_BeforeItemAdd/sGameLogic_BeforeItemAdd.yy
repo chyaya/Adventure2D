@@ -1,8 +1,8 @@
 {
-    "id": "8ed0f33c-587e-42e3-9868-f0190890ff49",
+    "id": "aae28141-5a26-43a4-82d2-e67866aa5ecd",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sPlayerController_GUI_Interact",
+    "name": "sGameLogic_BeforeItemAdd",
     "IsCompatibility": false,
     "IsDnD": false
 }

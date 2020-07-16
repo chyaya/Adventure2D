@@ -5,3 +5,4 @@
 event_inherited();
 
 m_Actions[array_length_1d(m_Actions)] = Action.ChopTree;
+m_Actions[array_length_1d(m_Actions)] = Action.ChopTree_Tool;

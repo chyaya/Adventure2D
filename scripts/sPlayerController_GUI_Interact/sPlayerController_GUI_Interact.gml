@@ -22,7 +22,17 @@ else
 		{
 			for (var i = 0; i < ActionNum; i++)
 			{
-				sUtil_DrawTextBox(screenX, screenY, global.Action_Name[m_Actions[i]],
+				var aid = m_Actions[i];
+				var text = global.Action_Name[aid];
+				
+				var toolItemId = global.Action_Tool_ItemId[aid];
+				var toolItemCount = global.Action_Tool_ItemCount[aid];
+				
+				if(global.Action_Food_Cost[aid] > 0)
+				{
+				}
+				
+				sUtil_DrawTextBox(screenX, screenY, text,
 					i == other.m_InteractActionIndex ? c_green : c_white, c_black);
 					
 				screenY -= 32;
