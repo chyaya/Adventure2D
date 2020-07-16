@@ -20,7 +20,8 @@ a = argument6;
 if c[? "active"] {
 
     /* Background */
-    draw_background_ext(c[? "bg"],__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ),1,1,0,c_white,1);
+   // draw_background_ext(c[? "bg"],__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ),1,1,0,c_white,1);
+
 
     /* Get view width */
     var w;

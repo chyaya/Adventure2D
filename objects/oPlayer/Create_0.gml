@@ -27,8 +27,8 @@ m_EquipName = [
 m_Inven_Equip = sInven_Create(Equip.MAX - 1, Equip.MAX - 1, Equip.MAX - 1);
 assert_equal(sInven_GetTotalSlotNum(m_Inven_Equip), Equip.MAX - 1);
 
-m_Inven_Bag = sInven_Create(10, 30, 5);
-assert_equal(sInven_GetTotalSlotNum(m_Inven_Bag), 30);
+m_Inven_Bag = sInven_Create(8, 8, 8);
+assert_equal(sInven_GetTotalSlotNum(m_Inven_Bag), 8);
 
 sInven_ConnectInvens(m_Inven_Equip, m_Inven_Bag);
 

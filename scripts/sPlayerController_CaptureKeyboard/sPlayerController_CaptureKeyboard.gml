@@ -1,35 +1,35 @@
 if(false == instance_exists(oGameOver))
 {
-	if(keyboard_check(ord("W")))
+	if(keyboard_check(vk_up))
 	{
 		m_Input_AxisL_Up = true;
 		m_Input_DPad_Up = true;
 	}
 
-	if(keyboard_check(ord("S")))
+	if(keyboard_check(vk_down))
 	{
 		m_Input_AxisL_Down = true;
 		m_Input_DPad_Down = true;
 	}
 
-	if(keyboard_check(ord("A")))
+	if(keyboard_check(vk_left))
 	{
 		m_Input_AxisL_Left = true;
 		m_Input_DPad_Left = true;
 	}
 
-	if(keyboard_check(ord("D")))
+	if(keyboard_check(vk_right))
 	{
 		m_Input_AxisL_Right = true;
 		m_Input_DPad_Right = true;
 	}
 	
-	if(keyboard_check_pressed(ord("Q")))
+	if(keyboard_check_pressed(ord("A")))
 	{
 		m_Input_Btn_LB	= true;
 	}
 		
-	if(keyboard_check_pressed(ord("E")))
+	if(keyboard_check_pressed(ord("S")))
 	{
 		m_Input_Btn_RB	= true;
 	}
@@ -39,22 +39,22 @@ if(false == instance_exists(oGameOver))
 		m_Input_Btn_RT = true;
 	}
 
-	if(keyboard_check_pressed(vk_up))
+	if(keyboard_check_pressed(ord("V")))
 	{
 		m_Input_Btn_Y = true;	
 	}
 
-	if(keyboard_check_pressed(vk_down))
+	if(keyboard_check_pressed(ord("Z")))
 	{
 		m_Input_Btn_A = true;	
 	}
 
-	if(keyboard_check_pressed(vk_left))
+	if(keyboard_check_pressed(ord("X")))
 	{
 		m_Input_Btn_X = true;	
 	}
 
-	if(keyboard_check_pressed(vk_right))
+	if(keyboard_check_pressed(ord("C")))
 	{
 		m_Input_Btn_B = true;	
 	}

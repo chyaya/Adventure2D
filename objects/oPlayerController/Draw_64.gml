@@ -3,7 +3,15 @@ draw_set_color(c_white);
 
 sPlayerController_GUI_Interact();
 
-
+with(m_PlayerObject)
+{
+	var viewW = view_wport[0];
+	var viewH = view_hport[0];
+	var slotSize = 64;
+	var gapSize = 8;
+	var row = sInven_GetSlotInRow(m_Inven_Bag);
+	sInven_DrawUI(m_Inven_Bag, (viewW - row*slotSize - (row - 1)*gapSize)*0.5, viewH - slotSize - 32, slotSize, row, gapSize); 
+}
 	
 
 /*

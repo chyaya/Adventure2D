@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "139f1b74-9165-4e49-a2ac-15f358327900",
+            "Value": {
+                "id": "d3ae6b4c-4146-4477-ba8f-6d4378098ee5",
+                "resourcePath": "scripts\\NineSliceBoxStretch\\NineSliceBoxStretch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "148d699b-8ee4-4935-b4c2-c6811476c5ed",
             "Value": {
                 "id": "5d3ce69d-be25-48cc-b060-b835386ef8e6",
@@ -131,6 +139,14 @@
             "Value": {
                 "id": "6a2abfe0-d184-471b-8f3e-b83d5a2f03be",
                 "resourcePath": "scripts\\sPlayerController_CaptureGamepad\\sPlayerController_CaptureGamepad.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1aa02443-afe3-4a16-97ad-19d32f7b0173",
+            "Value": {
+                "id": "62e841c2-9d5b-4a10-81f9-ec91552bf3e6",
+                "resourcePath": "scripts\\sInven_DrawUI\\sInven_DrawUI.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -703,6 +719,14 @@
             }
         },
         {
+            "Key": "836788c3-1701-41ff-8759-4b7e1820e337",
+            "Value": {
+                "id": "e428fa8e-6575-4d41-842e-f27c0545bb88",
+                "resourcePath": "scripts\\sInven_GetSlotInRow\\sInven_GetSlotInRow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "84840c77-e64f-46ad-bb60-27804da90f05",
             "Value": {
                 "id": "e2ef3e49-ed3a-4d9b-abb1-7abdef14bf52",
@@ -732,6 +756,14 @@
                 "id": "75325f33-002f-4b80-a8c0-c336b9bc5445",
                 "resourcePath": "views\\8ae52e9d-7d37-4f1a-9f32-c4e0707f9aba.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8af089ba-fbe2-4981-9501-5291ba29fc71",
+            "Value": {
+                "id": "def50713-9f00-497c-b28a-85fea825230b",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Tab_Inventory\\sPlayerController_DrawGUI_Tab_Inventory.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -987,6 +1019,14 @@
             "Value": {
                 "id": "d98cedef-6cb7-4875-8d3c-1c2bad114772",
                 "resourcePath": "scripts\\sPlayerController_SetPlayer\\sPlayerController_SetPlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b8512ab9-71a1-4131-9c31-61a1facfa5e2",
+            "Value": {
+                "id": "31f0dbd0-d9ef-4d6e-9b66-d69beec7f3e8",
+                "resourcePath": "scripts\\NineSliceBox\\NineSliceBox.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1386,6 +1426,8 @@
         "1067fb1d-069a-4663-88a6-bc07ecb3b982",
         "4ae0a539-e019-4c83-97de-85d439352d40",
         "ea0203c8-5975-4ef9-9195-13e149c5f64a",
+        "1aa02443-afe3-4a16-97ad-19d32f7b0173",
+        "836788c3-1701-41ff-8759-4b7e1820e337",
         "eafab41e-4f15-478f-adf7-1f2bb49d4911",
         "8b543db5-be5e-4d03-8624-82d77dbc0865",
         "84840c77-e64f-46ad-bb60-27804da90f05",
@@ -1413,6 +1455,7 @@
         "7cce86a3-e092-47fa-88f6-3cf92d6df0a1",
         "704c5c1a-268a-4837-84dd-566789a19ae5",
         "8ed0f33c-587e-42e3-9868-f0190890ff49",
+        "8af089ba-fbe2-4981-9501-5291ba29fc71",
         "56a7f87d-216f-4c72-b8c2-4f29af023b7f",
         "3f208f6f-7c8f-4b69-8c65-5aff9f921b55",
         "30332e9a-3414-4667-82d9-3fb0109e48ad",
@@ -1445,7 +1488,9 @@
         "c0d5957a-2f39-4de0-95e1-1b97814dfcbd",
         "16486f8f-4894-4148-abbd-555816a39860",
         "f4fbfa8e-71eb-4a80-953c-7ed21b80febf",
-        "8e00b484-babf-4a51-8bf9-13d10fd3c028"
+        "8e00b484-babf-4a51-8bf9-13d10fd3c028",
+        "139f1b74-9165-4e49-a2ac-15f358327900",
+        "b8512ab9-71a1-4131-9c31-61a1facfa5e2"
     ],
     "tutorial": ""
 }

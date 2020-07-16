@@ -24,14 +24,14 @@ if !c[? "active"] {
     surface_free(sfc);
     c[? "bg"] = bg;
     
-    instance_deactivate_all(true);
+    //instance_deactivate_all(true);
     
     keyboard_string = "";
     c[? "active"] = true;
 
 } else {
     
-    instance_activate_all();
+    //instance_activate_all();
     
     /* Disable */
     c[? "active"] = false;
