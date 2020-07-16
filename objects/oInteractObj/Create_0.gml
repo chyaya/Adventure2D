@@ -5,4 +5,4 @@
 event_inherited();
 
 m_Actions = [Action.NONE];
-
+m_CurrentAction = Action.NONE;

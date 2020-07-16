@@ -149,8 +149,9 @@ case Mode.Bag:
 	break;
 case Mode.Interact:
 	
-	if(m_Input_Btn_B)
+	if(m_Input_Btn_A)
 	{
+		
 		m_Mode = Mode.Move;
 	}
 	

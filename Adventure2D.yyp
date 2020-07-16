@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "3b80ae41-69b4-4f68-a4b2-57a129266f15",
+            "Value": {
+                "id": "994ffad5-292e-4868-a954-1d927edcec37",
+                "resourcePath": "objects\\oResource\\oResource.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3efad8d6-9a91-46ae-8b60-fdb8bb46e7ce",
             "Value": {
                 "id": "af9ec113-0e1b-4170-bd53-7f37794e9f0a",
@@ -831,6 +839,14 @@
             }
         },
         {
+            "Key": "91586c90-2e41-4afe-8bb6-c684977e89ff",
+            "Value": {
+                "id": "66f187d2-fd89-4324-92e8-0452e6ba9a05",
+                "resourcePath": "views\\91586c90-2e41-4afe-8bb6-c684977e89ff.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "949f516a-b6e4-4271-a51e-681fc26860f9",
             "Value": {
                 "id": "503ef5f1-fc8a-4164-ac17-9ce5396deec3",
@@ -1271,6 +1287,14 @@
             }
         },
         {
+            "Key": "e8d82692-e718-4937-94a8-59d796f7c4de",
+            "Value": {
+                "id": "1cc947c6-78f5-474b-a2ff-719fb13b547c",
+                "resourcePath": "scripts\\sGameLogic_\\sGameLogic_.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e9a9d9a2-d1bf-426d-ae54-2950f28cffa2",
             "Value": {
                 "id": "f4e8a592-f2db-40c2-ae63-74b1d05f7b55",
@@ -1434,6 +1458,7 @@
         "77f862ff-e867-417a-b9e8-8743e21f5728",
         "8238bd81-8e6b-4aed-ab44-395c73c46e25",
         "aae28141-5a26-43a4-82d2-e67866aa5ecd",
+        "e8d82692-e718-4937-94a8-59d796f7c4de",
         "4947352a-db17-44ee-8869-a255d501e238",
         "f8d56df8-0736-48dc-93a3-510613b6fe77",
         "6e4bd5aa-8939-4330-8445-5c2217ebf9e7",

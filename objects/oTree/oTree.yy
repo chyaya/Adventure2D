@@ -26,7 +26,7 @@
             "value": "나무"
         }
     ],
-    "parentObjectId": "10ec3e89-82f8-4c68-ae9a-b88516f36528",
+    "parentObjectId": "3b80ae41-69b4-4f68-a4b2-57a129266f15",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
